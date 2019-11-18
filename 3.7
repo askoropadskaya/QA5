@@ -1,0 +1,64 @@
+//Задание 3.7
+//Ваши имя и фамилия: Hanna Skoropadska
+
+/* 1. Создайте переменные со следующими значениями:
+        5734050
+        'BORSCH'
+        true
+        'false'
+        null
+        NaN
+        undefined
+*/
+
+let num = (5734050);
+let word ='BORSCH';
+let result = true;
+let mistake = 'false';
+let card = null;
+let all = NaN;
+let some = undefined;
+
+// 2. Определите тип данных у созданных переменных и выведите в консоль.
+console.log(typeof(num));
+console.log(typeof(word));
+console.log(typeof(result));
+console.log(typeof(mistake));
+console.log(typeof(card));
+console.log(typeof(all));
+console.log(typeof(some));
+
+// 3. Задайте переменную "цена игрушки" (на английском, конечно!), присвойте в нее значение 25,
+//    Выведите в консоль предложение "Стоимость пяти игрушек равна 125".
+//    При этом предложение должно быть выведено с помощью backticks(``) и переменной "цена игрушки"
+const toysPrice = 25;
+console.log(`Total price for 5 = ${toysPrice * 5}`);
+
+// 4. Задайте переменную а со значением 12.
+// Выведите в консоль выражение типа boolean, значение которого равно true, если переменная a четная,
+// и false, если значение переменной a нечетное.
+
+let a = 12;
+if (a%2 == 0) console.log(true);
+else console.log(false);
+
+// 5. Задайте переменную, значением которой является количество суток (например, 5). 
+// Напишите последовательность команд, вычисляющих количество часов, минут и секунд в данном количестве суток.
+let day = 5;
+let hours = day * 24;
+let minuts = hours * 60;
+let seconds = minuts * 60;
+console.log(day, hours, minuts, seconds);
+// 6. Число жителей города 185600 человек. Ежегодно население  в нем увеличивается на 2%. 
+//    Напишите последовательность команд для вычисления количества жителей города через год.
+let citizens = 185600;
+let annualPopulationGrowth = 0.02;
+let yearCount = 1;
+let citizenGrowth = citizens + (citizens * annualPopulationGrowth * yearCount);
+console.log(citizenGrowth);
+
+
+
+
+
+
