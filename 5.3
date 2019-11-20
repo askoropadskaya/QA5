@@ -1,0 +1,40 @@
+//5.3 Тема: Есть ли ЭТО свойство у объекта?
+//Ваши имя и фамилия: Hanna Skoropadska
+
+//1. Создайте объект, описываающий книгу со следующими свойствами:
+//   authorFirsrName, authorLastName, title, style, year,  numberOfPages,
+//   задайте значения свойств объекта.
+let book = {
+  authorFirstName: 'Stefan',
+  authorLastName: 'Zweig',
+  title: 'Mary Queen of Scots',
+  style: 'British history',
+  year: 2018,
+  numberOfPages: 448,
+}
+
+//2. Проверьте существование этих шести свойств у объекта разными способами.
+if (book.authorLastName == 'Zweig') {
+  console.log('Yes, it is Zweig');
+}
+if (book.authorFirstName == 'Stefan') {
+  console.log('Yes, it is Stefan');
+}
+console.log(Boolean(book.style));
+
+if (book.hasOwnProperty('year')){
+  console.log('Exists');
+} else {
+  console.log('Missing');
+}
+console.log(book.title);
+
+console.log(book.hasOwnProperty('numberOfPages'));
+
+//3. Проверьте существование у объекта свойства hardcover
+
+if (book.hasOwnProperty('hardcover')){
+  console.log('Exists');
+} else {
+  console.log('Missing');
+}
