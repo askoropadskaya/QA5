@@ -1,0 +1,41 @@
+// 5.1 Тема: Примитивным не назовешь!
+// Ваши имя и фамилия: Skoropadska Hanna
+
+//1. Создайте объект с именем greeting, у которого свойства - название языка (english, french, 
+//   russian и др.),  а значения свойств - фраза «Добро пожаловать!» на этом языке.
+let greeting = {
+  english: 'Welcome!',
+  russian: 'Добро пожаловать!',
+  italian: 'Di niente!',
+  german: 'Herzlich willkommen!',
+}
+  
+// 2. Выведите в консоль приветствие на итальянском языке.
+console.log(greeting.italian);
+
+//3. Создайте объект car, который описывает автомобиль. 
+//   Учитывайте не только характеристики автомобиля, но и владельца, регистрационные данные
+const car = {
+  brand : 'Jaguar',
+  model : 'F-Type',
+  made : 2016,
+  VIN : '6JF584367FT568798',
+  color : 'white',
+  registration : {
+    licensePlate : 'JSK455',
+    expiration : 'September 2020',
+  },
+  owner : {
+    firstName : 'Joanna',
+    lastName : 'Smith',
+    driverLisence : 'Y35172S',
+    address : {
+      city : 'Walnut Creek',
+      zip : '94596',
+    },
+  },
+}
+
+// 4. Выведите в консоль имя владельца автомобиля. 
+
+console.log(car.owner.firstName);
