@@ -1,0 +1,27 @@
+// 5.4
+//Ваше имя и фамилия: Hanna Skoropadska
+
+//Создайте объект, описывающий вас как студента группы QA5.
+let user = {
+  group: 'QA5',
+  name: 'Hanna',
+  lastName: 'Skoropadska',
+  diary: 49,
+  hasBackgroundAsProgrammer: 'N',
+}
+console.log(user);
+//Добавьте любое свойство
+user. activity = 4;
+console.log(user);
+
+//Измените значение какого-нибудь свойства
+user.diary = 37;
+console.log(user);
+//Удалите любое свойство
+delete user.diary;
+console.log(user);
+//Определите, есть ли у объекта свойство hasBackgroundAsProgrammer
+if (user.hasOwnProperty('hasBackgroundAsProgrammer')){
+  console.log('yes');
+}
+
