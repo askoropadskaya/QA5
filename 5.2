@@ -1,0 +1,44 @@
+// 5.2 Тема: Операции с объектами
+// Ваши имя и фамилия: Hanna Skoropadska
+
+//1. Создайте объект с именем user, который описывает пользователя  
+//   cо свойствами username и status (online или offline). 
+let user = {
+  username: 'Anastasia',
+  status_1: 'online',
+  status_2: 'offline',
+}
+//2. Выведите объект в консоль.
+console.log(user);
+
+//3. Добавьте свойство lastActivity, значение которого - 
+//   количество минут проведенных в сети.
+user.lastActivity = 20;
+
+//4. Выведите объект в консоль.
+console.log(user);
+
+//5. Добавьте свойство password.
+
+user.password = 'MokrijSuslik';
+console.log(user);
+
+//6. Удалите свойство lastActivity. 
+
+delete user.lastActivity;
+console.log(user);
+
+//7. Добавьте свойство address, являющееся объектом и содержащее 
+//   название города, штата и индекса.
+
+let address = {
+  city: 'San Francisco',
+  state: 'CA',
+  zip: 94105,
+}
+user.address = address;
+console.log(user);
+
+//8. Выведите в консоль город проживания пользователя.
+
+console.log(user.address.city);
