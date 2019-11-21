@@ -1,0 +1,38 @@
+//6.4 Тема: НЕ (!)
+//Ваши имя и фамилия:Hanna Skoropadska
+
+//1. Задайте переменную x, присвойте ей значение 100.
+let x = 100;
+
+// Составьте с помощью операции НЕ(!) и выведите в консоль условия, 
+// значением которых будет true: (например, console.log(!(x===0)) или console.log(x!==0))
+
+// x не меньше 50
+console.log(x !== 50);
+// x не делится на 3
+console.log(x % 3 !== 0);
+// тип переменной x - не строка
+console.log(typeof x !== 'string');
+// x не отрицательное число
+console.log(x !== x * -1);
+
+//2. Задайте  переменную a, присвойте ей значение null. Придумайте и выведите 
+//   в консоль три условия с использованием переменной а и операции НЕ(!), 
+//   значением которых будет true:
+console.log('++++++++');
+let a = null;
+console.log(typeof a !== NaN);
+console.log(a !== 0);
+console.log(typeof a !== null);
+
+//3. Выведите в консоль преобразованные к логическому типу значения: 
+//   5, 'pasv', 0, '', null, undefined 
+console.log('++++++++++');
+console.log(Boolean(5));
+console.log(Boolean('pasv'));
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+
+
