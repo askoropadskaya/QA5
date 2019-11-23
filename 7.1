@@ -1,0 +1,39 @@
+//7.1 Тема: Верное условие if и неверное else
+//Ваши имя и фамилия: Hanna Skoropadska
+
+//1. Задайте 2 переменные x и y, присвойте им значения 12 и 7
+//  (значения могут меняться, ваш код должен работать правильно всегда!)
+//  Найти и вывести в консоль большее из этих двух чисел.
+let x = 12;
+let y = 12;
+
+  if (x > y) console.log(x);
+      else console.log(y);
+            
+//2. Задайте переменную a, присвойте ей произвольное значение.
+//  Определите, является ли это значение четным.
+let a = 11;
+if (a % 2 === 0) console.log('yes, number is even');
+  else console.log('no, number is odd');
+       
+//3. Задайте переменную age (возраст человека), присвойте ей произвольное значение.
+//   Определите, является ли этот человек школьником
+//  (школьником будем считать человека в возрасте от 5 до 18 лет включительно).
+let age = 5;
+if (age >= 5 && age <= 18) console.log('STUDENT');
+else console.log('NOT a Student');
+
+//4. Задайте переменную year, присвойте ей произвольное значение. 
+//   Определите, относится ли год к XXI веку 
+//   (XXI век начинается с 2001 года и заканчивается в 2100 году).
+let year = 2019;
+if (year >= 2001 && year <= 2100) console.log('XXI century');
+else console.log('Nope');
+
+//5. Задайте переменную  month, присвойте ей значение от 1 до 12.
+//   Выведите в консоль название поры года (Winter, Spring, Summer, Fall). 
+let month = 12;
+if (month >= 3 && month <= 5) console.log('Spring');
+  else if (month >= 6 && month <= 8) console.log('Summer');
+  else if (month >= 9 && month <= 11) console.log('Fall');
+  else if (month = 12 || month >= 1 && month <= 2) console.log('Winter');
