@@ -1,0 +1,49 @@
+//7.2 Тема: Несколько условий if else
+//Ваши имя и фамилия: Hanna Skoropadska
+
+//1. Задайте переменную month (номер месяца), присвойте ей значение от 1 до 12.
+//  Найдите и выведите в консоль количество дней в этом месяце для невисокосного года.
+
+let month = 11;
+if (month < 1 || month > 12) console.log('wrong month number');
+else if (month == 2) console.log('28');
+else if (month <= 7 && month % 2 !== 0) console.log('31');
+else if (month > 7 && month <= 12 && month % 2 === 0) console.log('31');
+else (console.log('30'));
+  
+//2. Задайте переменную dayOfWeek (номер дня недели) (число от 1 до 7). 
+//  Определите, является этот день выходным днем или рабочим
+// (выведите в консоль 'weekend' или 'work day')
+
+let dayOfWeek = 4;
+if (dayOfWeek < 1 || dayOfWeek > 7) console.log('wrong Day');
+else if(dayOfWeek >= 1 && dayOfWeek <= 5) console.log('work day');
+else console.log('weekend');
+
+//3. Задайте переменную age (возраст пассажира).
+// Найдите стоимость завтрака на круизном пароме, если:  
+// стоимость завтрака для взрослых (18 лет и старше) составляет 10 евро, 
+// для подростков (12 – 17 лет) – 6 евро, 
+// для детей (6-11 лет) – 4 евро, 
+// для детей младше 6 лет – бесплатно. 
+
+let age = 102;
+if (age >= 18) console.log('10 EURO');
+else if (age >= 12 && age <= 17) console.log('6 EURO');
+else if (age >= 6 && age <= 11) console.log('4 EURO');
+else console.log('FREE');
+
+/// а как же скидки для пенсионеров ;)
+//4.Задайте три переменных x, y, z и присвойте им произвольные значения.
+//  Выведите в консоль максимальное значение. 
+// (пользоваться методами нельзя!, только if-else, и желательно - самый короткий способ)
+let x = 76;
+let y = 45;
+let z = 23;
+
+if (x > y && x > z) console.log(x);
+else if (y > z && y > x) console.log(y);
+else if (z > y && z > x) console.log(z);
+  
+  
+  
