@@ -1,0 +1,52 @@
+//9.4 Тема: Комбинирование циклов и условных операторов
+// Ваше имя и фамилия: Hanna Skoropadska
+
+//1. Выведите в консоль числа, кратные 3, в диапазоне от 1 до 40.
+for (let i = 1; i < 40; i++){
+  if (i % 3 === 0) console.log(i);
+}
+//2. Задайте пустой массив arr. Используя метод push, заполните 
+//   в цикле массив четными числами от 30 до 10 с порядке убывания.
+let arr = [];
+for (i = 30; i >= 10; i--){ 
+  if (i%2 === 0) arr.push(i);
+}
+console.log(arr);
+
+//3. Задана строка str = 'Now I am studying programming on JS'.
+// Найти количество пробелов в строке.
+
+let str = 'Now I am studying programming on JS';
+let amountOfDash =(str.split(' ').length - 1);
+  console.log(amountOfDash); 
+
+//4. Найти общее количество гласных букв (a,o,e,u,i) в строке str.
+
+let vowels = 'aoeui';
+let totalVowels = 0;
+for (i = 0; i < str.length; i++) {
+    
+    if (vowels.includes(str[i].toLowerCase())) {
+      totalVowels++;
+    }
+  }
+console.log(totalVowels);
+
+
+//5. Дан массив arr = [3, 7, 4, 9, 2, 10, 1, 17, 6, 23, 5, 13];
+// Найти разность между максимальным и минимальным элементом массива.
+let newArr = [3, 7, 4, 9, 2, 10, 1, 17, 6, 23, 5, 13];
+let max = newArr[0];
+let min = newArr[0];
+for (i = 0; i < newArr.length; i++){
+  if (newArr[i] > max) {
+    max = newArr[i];
+  }
+  if (newArr[i] < min){
+    min = newArr[i];
+  }
+}
+console.log(max - min);
+  
+  
+  
