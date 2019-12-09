@@ -1,0 +1,63 @@
+//10.3 Тема: Функциональные выражения, стрелочные функции и многое другое
+// Ваше имя и фамилия: Hanna Skoropadska
+
+//1. Дан массив arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   Напишите функцию sum, которая принимает массив как аргумент и возвращает
+//   сумму элементов массива.
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function sum (arr1){
+  return arr1.reduce(function(a,b){
+    return a + b
+  }, 0);
+}
+console.log(sum(arr1));
+//2. Дан массив arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   Напишите функцию reverse, которая принимает массив как аргумент и возвращает
+//   массив, в котором элементы расположены в обратном порядке.
+let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function reverse (arr2) {
+  return arr2.reverse();
+}
+console.log(reverse(arr2));
+
+//3. Дан массив arr3 = [1, 2, -3, 4, -5, 6, 7, -8, 9, 10];
+//   Напишите функцию indexOfFirstNegative, которая принимает массив и возвращает
+//   индекс первого отрицательного элемента массива (в данном массиве это 2).
+let arr3 = [1, 2, -3, 4, -5, 6, 7, -8, 9, 10];
+function indexOfFirstNegative (arr3) {
+  for (let i = 0; i < arr3.length; i++){
+    if (arr3[i] < 0) return i;
+  }
+}
+console.log(indexOfFirstNegative(arr3));
+//4. Напишите функцию с именем newArray, которая принимает два числа x, y (x<y)
+//   и возвращает массив, в котором записаны целые числа от x до y.
+//   Например, если x = 5, y = 10, вернуть массив [5,6,7,8,9,10];
+function newArray (x, y){
+  let arr = [];
+  for (let i = x; i <= y; i++){
+    if (i >= x) arr.push(i);
+  }
+  return arr
+}
+console.log(newArray (5, 10));
+
+//5. Дан массив строк: 
+//   arr4 = ['apple', 'orange', 'grape', 'banana', 'mango', 'peach'];
+//   Напишите функцию countWords, которая принимает массив как аргумент 
+//   и возвращает количество слов, длина которых равна 5.
+let  arr4 = ['apple', 'orange', 'grape', 'banana', 'mango', 'peach'];
+function countWords (arr4){
+  count = 0;
+  for (let i = 0; i < arr4.length; i++){
+    if (arr4[i].length === 5) count ++;
+    }
+  return count;
+}
+console.log(countWords(arr4));
+
+
+
+
+
+
