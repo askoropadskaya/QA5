@@ -1,0 +1,50 @@
+//10.2 Тема: Способы задания функций
+// Ваше имя и фамилия: Hanna Skoropadska
+
+//1. Напишите функцию, которая принимает число как аргумент и возвращает 
+//  противоположное по значению число. (1  => -1; -5 => 5; 0 => 0).
+function oppositeNum (n){
+  return -n;
+}
+console.log(oppositeNum(1));
+console.log(oppositeNum(-5));
+console.log(oppositeNum(0));
+
+//2. Напишите функцию, которая принимает целое число как аргумент и возвращает 
+//  "Even" для четных чисел  или  "Odd" для нечетных чисел.
+function evenOdd (n){
+  if (n % 2 == 0) return 'Even';
+  else return 'Odd';
+}
+console.log(evenOdd(15));
+console.log(evenOdd(44));
+console.log(evenOdd(0));
+
+//3. Напишите функцию, которая принимает строку и возвращает первый символ строки. 
+function firstSymbol (s){
+  return s[0];
+}
+console.log(firstSymbol('Happy Monday'));
+console.log(firstSymbol('!qwerty'));
+
+//4. Напишите функцию, которая принимает число и возвращает 
+//  его отрицательным. Если число уже отрицательное, то возвращается само число. 
+//  Если число равно 0, возвращается 0. 
+
+//Is this the same task as task No 1?
+function oppositeNum (n){
+  return -n;
+}
+console.log(oppositeNum(1));
+console.log(oppositeNum(-5));
+console.log(oppositeNum(0));
+
+//5. Напишите функцию, которая принимает число, трансформирует это число  
+//   в строку и возвращает эту строку.
+
+function toString (n){
+  return n.toString();
+}
+console.log(toString(5));
+
+
